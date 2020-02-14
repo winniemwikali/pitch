@@ -1,5 +1,5 @@
-from app import creat_app,db
 from app.models import User
+from manage import creat_app
 app = create_app('production')
 manager = Manager(app)
 manager.add_command('server',Server)
