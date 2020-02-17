@@ -24,7 +24,7 @@ Post a pitch | One paragraph | Posted
 
 # Installations & setup
 To run this application on your local machine, you should have to run the following commands on your terminal on assumptions that Python3.6 and pip are already installed:
-- Clone the application by 
+- Clone the app
 - Install project dependancies as listed in the requirements.txt file by running `pip install -r requirements.txt`
 
 
