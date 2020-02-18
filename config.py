@@ -11,7 +11,7 @@ class Config:
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
     SUBJECT_PREFIX = 'PITCH'
     SENDER_EMAIL = 'mwikaliwinnie303@gmail.com'
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:izoh1234@localhost/winnie'
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringaschool:Access@localhost/winnie'
     WTF_CSRF_ENABLED = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
@@ -25,7 +25,7 @@ class TestConfig(Config):
     '''
     Testing configuration child class
     '''
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:izoh1234@localhost/winnie'
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringaschool:winy@localhost/winnie'
 
 class DevConfig(Config):
     '''
@@ -33,7 +33,7 @@ class DevConfig(Config):
 
     
     '''
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:izoh1234@localhost/winnie'
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringaschool:winy@localhost/winnie'
     DEBUG = True
 
 config_options = {
