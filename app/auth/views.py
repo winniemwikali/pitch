@@ -24,7 +24,8 @@ def login():
 @auth.route('/register',methods = ["GET","POST"])
 def register():
     form = RegistrationForm()
-    if form.validate_on_submit():
+    if current_user is not None and current_user .is_authenticated():
+     if form.validate_on_submit():
         user = User(email = form.email.data, username = form.username.data,password = form.password.data)
         db.session.add(user)
         db.session.commit()

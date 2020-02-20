@@ -11,7 +11,7 @@ class PitchModelTest(unittest.TestCase):
         '''
         set up method that runs before evry test
         '''
-         self.user_murathe = User(username = 'murathe',password = '1122334455', email = 'murathe@gmail.com')
+         self.user_winnie = User(username = 'winnie',password = '1122334455', email = 'mwikaliwinnie303@gmail.co')
         
         self.new_pitch = Pitch (id = 1, pitch_title = 'pitch',pitch_content = 'pitch test' category='product')
         

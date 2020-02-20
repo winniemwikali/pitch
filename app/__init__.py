@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_login import LoginManager
+from flask_login import LoginManager,current_user
 from flask_sqlalchemy import SQLAlchemy
 from flask_bootstrap import Bootstrap
 from flask_mail import Mail
@@ -9,9 +9,11 @@ from config import config_options
 app = Flask(__name__)
 db = SQLAlchemy(app)
 login_manager = LoginManager(app)
+# added this line fixed the issue
+login_manager.init_app(app)
 bootstrap = Bootstrap()
 mail = Mail(app)
-login_manager.login_view = 'auth.login'
+login_manager.login_view = 'users.login'
 login_manager.session_protection = 'strong'
 
 
